@@ -43,8 +43,8 @@
     });
     const result = document.getElementById("result");
     if (isCorrect) {
-      result.textContent = "🔮 Bravo, puzzle complété !";
-      result.style.color = "green";
+      result.textContent = "Good. !";
+      result.style.color = "red";
     } else {
       result.textContent = "Ce n’est pas encore ça…";
       result.style.color = "red";
