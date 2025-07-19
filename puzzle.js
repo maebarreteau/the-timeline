@@ -1,12 +1,12 @@
 
 (() => {
   const correctOrder = [
-    "00.jpg", "01.jpg", "02.jpg",
-    "10.jpg", "11.jpg", "12.jpg",
-    "20.jpg", "21.jpg", "22.jpg"
+    "00.jpg", "10.jpg", "20.jpg",
+    "01.jpg", "11.jpg", "21.jpg",
+    "02.jpg", "12.jpg", "22.jpg"
   ];
 
-  let dragged; // élément qu’on déplace
+  let dragged; 
 
   document.querySelectorAll('#puzzle img').forEach(img => {
     img.addEventListener('dragstart', (e) => {
@@ -19,13 +19,13 @@
     });
 
     img.addEventListener('dragover', (e) => {
-      e.preventDefault(); // nécessaire pour autoriser le drop
+      e.preventDefault(); 
     });
 
     img.addEventListener('drop', (e) => {
       e.preventDefault();
       if (dragged !== e.target) {
-        // échanger les src
+        
         const temp = dragged.src;
         dragged.src = e.target.src;
         e.target.src = temp;

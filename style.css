@@ -140,14 +140,29 @@ img {
 
 #puzzle {
   display: grid;
-  grid-template-columns: repeat(9, 120px); /* 9 colonnes pour tes 9 images */
+  grid-template-columns: repeat(3, 120px); 
   gap: 5px;
-  background-color: black; /* pour voir les cases, tu peux enlever si tu veux */
+  background-color: black;
 }
 
 #puzzle img {
   width: 120px;
   height: 120px;
-  object-fit: contain; /* pour que l’image garde ses proportions */
+  object-fit: contain; 
   border: 1px solid gray;
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+
+
