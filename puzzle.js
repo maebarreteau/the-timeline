@@ -46,7 +46,7 @@
       result.textContent = "Good. You can now access the next event.";
       result.style.color = "red";
     } else {
-      result.textContent = "Ce n’est pas encore ça…";
+      result.textContent = "No.";
       result.style.color = "red";
     }
   }
