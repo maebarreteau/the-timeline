@@ -119,3 +119,35 @@ a.event:visited {
     align-items: center;
 
 }
+
+img {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  border: 1px solid #444;
+  cursor: grab;
+}
+
+.piece[data-id="00"] { background-image: url('00.png'); }
+.piece[data-id="01"] { background-image: url('01.png'); }
+.piece[data-id="02"] { background-image: url('02.png'); }
+.piece[data-id="10"] { background-image: url('10.png'); }
+.piece[data-id="11"] { background-image: url('11.png'); }
+.piece[data-id="12"] { background-image: url('12.png'); }
+.piece[data-id="20"] { background-image: url('20.png'); }
+.piece[data-id="21"] { background-image: url('21.png'); }
+.piece[data-id="22"] { background-image: url('22.png'); }
+
+#puzzle {
+  display: grid;
+  grid-template-columns: repeat(9, 120px); /* 9 colonnes pour tes 9 images */
+  gap: 5px;
+  background-color: black; /* pour voir les cases, tu peux enlever si tu veux */
+}
+
+#puzzle img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain; /* pour que l’image garde ses proportions */
+  border: 1px solid gray;
+}
