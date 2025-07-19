@@ -43,7 +43,7 @@
     });
     const result = document.getElementById("result");
     if (isCorrect) {
-      result.textContent = "Good. !";
+      result.textContent = "Good. You can now access the next event.";
       result.style.color = "red";
     } else {
       result.textContent = "Ce n’est pas encore ça…";
